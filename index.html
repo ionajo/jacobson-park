@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Map Template Fixed Width</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      rel="icon"
+      href="https://uky-gis.github.io/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        font-family: "Lato", sans-serif; /* change made here */
+        font-weight: 300; /* addition here */
+        color: #3d3d3d;
+        font-size: 100%;
+      }
+
+      h1 {
+        font-size: 2em;
+        font-weight: 900; /* addition here */
+        letter-spacing: 0.04em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        font-weight: 300; /* addition here */
+        letter-spacing: 0.04em;
+      }
+
+      header,
+      section,
+      footer {
+        width: 80%;
+        margin: 10px auto;
+      }
+
+      p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+      }
+
+      a {
+        color: #005daa;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+
+      .img-fill {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        border: 2px solid #3d3d3d;
+      }
+
+      #map {
+        width: 100%;
+      }
+
+      /* Use float property to make two-column layout */
+      .first-column {
+        float: left;
+        width: 49%;
+        padding-right: 2%;
+      }
+
+      .second-column {
+        float: left;
+        width: 49%;
+      }
+
+      hr {
+        margin: 20px 0;
+        border: 0;
+        height: 1px;
+        background: #d3d3d3;
+      }
+
+      .caption {
+        margin: 0 0 20px 0;
+        display: block;
+      }
+
+      /* Clear floats after columns */
+      .row::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      @media screen and (max-width: 900px) {
+        .first-column,
+        .second-column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Title of map</h1>
+    </header>
+    <section>
+      <!-- Start row -->
+      <div class="row">
+        <!-- Start left column -->
+        <div class="first-column">
+          <div id="map">
+            <img
+              src="jacobson-park.jpg"
+              alt="Jacobson Park, Lexington Kentucky"
+              class="img-fill"
+            />
+          </div>
+          <h2>about this map</h2>
+
+          <p>Additional information about <a href="#">the map</a> goes here.</p>
+
+          <ul>
+            <li>
+              See my projects on GitHub:
+              <a href="https://github.com/tastyfreeze">@TastyFreeze</a>
+            </li>
+            <li>Visit my <a href="#">mapping portfolio</a>.</li>
+          </ul>
+          <!-- End first column -->
+        </div>
+        <!-- Start right column -->
+        <div class="second-column">
+          <img
+            src="https://uky-gis.github.io/history/aerial_photos/downtown_campus_1996_raitz.jpg"
+            alt="Lexington and UK Campus, 1996"
+            class="img-fill"
+          />
+
+          <div class="caption">
+            Lexington,
+            <a href="https://exploreuk.uky.edu/fa/findingaid/?id=xt7g4f1mkk62"
+              >Karl Raitz Kentucky slides, 1980s-2000s</a
+            >, University of Kentucky Special Collections.
+          </div>
+
+          <!-- End right column -->
+        </div>
+
+        <!-- End row column -->
+      </div>
+    </section>
+
+    <footer>
+      <hr />
+      <img src="yodas-maps.png" alt="Yodas Maps" width="300px" />
+
+      <a href="https://uky-gis.github.io">
+        <img
+          src="https://newmapsplus.github.io/assets/graphics/logo-2018-geography-75px-h.png"
+          alt="University of Kentucky Department of Geography"
+        />
+      </a>
+    </footer>
+  </body>
+</html>
