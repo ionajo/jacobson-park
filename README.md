@@ -1,6 +1,6 @@
-# jacobson-park
+# Jacobson Park
 
-Jacobson Park, Lexington, Kentucky
+Map of Jacobson Park, Lexington, Kentucky
 
 ## A map of opportunity
 
